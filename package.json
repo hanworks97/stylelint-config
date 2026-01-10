@@ -3,6 +3,20 @@
   "type": "module",
   "version": "1.0.0",
   "packageManager": "pnpm@10.15.0",
+  "description": "Hanworks ESLint config",
+  "author": "Hanworks <khan97z.miao@gmail.com> (https://github.com/hanworks97/)",
+  "license": "MIT",
+  "homepage": "https://github.com/hanworks97/eslint-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanworks97/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hanworks97/eslint-config/issues"
+  },
+  "keywords": [
+    "eslint-config"
+  ],
   "publishConfig": {
     "access": "public"
   },
