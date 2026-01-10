@@ -1,0 +1,54 @@
+{
+  "name": "@stackou/eslint-config",
+  "type": "module",
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.15.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "postinstall": "npm run build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "peerDependencies": {
+    "@antfu/eslint-config": ">=4.15.0",
+    "eslint": ">=9.29.0",
+    "eslint-plugin-react-native": ">=5.0.0",
+    "eslint-plugin-tailwindcss": ">=3.18.2"
+  },
+  "peerDependenciesMeta": {
+    "eslint-plugin-react-native": {
+      "optional": true
+    },
+    "eslint-plugin-tailwindcss": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.15.0",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "eslint": "^9.29.0",
+    "eslint-plugin-format": "^1.0.2",
+    "rollup": "^4.34.1",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-delete": "^3.0.1",
+    "rollup-plugin-typescript2": "^0.36.0"
+  }
+}

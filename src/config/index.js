@@ -1,0 +1,7 @@
+export * from './globals'
+export * from './ignores'
+export * from './javascript'
+export * from './react-native'
+export * from './tailwindcss'
+export * from './uniapp'
+export * from './vue'
