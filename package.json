@@ -1,21 +1,21 @@
 {
-  "name": "@stackou/eslint-config",
+  "name": "@stackou/stylelint-config",
   "type": "module",
   "version": "1.0.0",
   "packageManager": "pnpm@10.15.0",
-  "description": "Hanworks ESLint config",
+  "description": "Hanworks Stylelint config",
   "author": "Hanworks <khan97z.miao@gmail.com> (https://github.com/hanworks97/)",
   "license": "MIT",
-  "homepage": "https://github.com/hanworks97/eslint-config",
+  "homepage": "https://github.com/hanworks97/stylelint-config",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hanworks97/eslint-config.git"
+    "url": "git+https://github.com/hanworks97/stylelint-config.git"
   },
   "bugs": {
-    "url": "https://github.com/hanworks97/eslint-config/issues"
+    "url": "https://github.com/hanworks97/stylelint-config/issues"
   },
   "keywords": [
-    "eslint-config"
+    "stylelint-config"
   ],
   "publishConfig": {
     "access": "public"
@@ -40,18 +40,21 @@
     "commit": "czg"
   },
   "peerDependencies": {
-    "@antfu/eslint-config": ">=4.15.0",
-    "eslint": ">=9.29.0",
-    "eslint-plugin-react-native": ">=5.0.0",
-    "eslint-plugin-tailwindcss": ">=3.18.2"
+    "autoprefixer": ">=10.4.20",
+    "postcss": ">=8.5.3",
+    "stylelint": ">=16.14.1"
   },
-  "peerDependenciesMeta": {
-    "eslint-plugin-react-native": {
-      "optional": true
-    },
-    "eslint-plugin-tailwindcss": {
-      "optional": true
-    }
+  "dependencies": {
+    "@stylistic/stylelint-plugin": "^3.1.2",
+    "postcss-html": "^1.8.0",
+    "postcss-scss": "^4.0.9",
+    "stylelint-config-recess-order": "^6.0.0",
+    "stylelint-config-recommended": "^15.0.0",
+    "stylelint-config-recommended-scss": "^14.1.0",
+    "stylelint-config-recommended-vue": "^1.6.0",
+    "stylelint-config-standard": "^37.0.0",
+    "stylelint-order": "^6.0.4",
+    "stylelint-scss": "^6.11.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.15.0",
