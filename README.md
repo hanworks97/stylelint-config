@@ -7,7 +7,7 @@
 在你的项目中安装 `@stackou/stylelint-config` 包：
 
 ```bash
-pnpm add -D eslint @stackou/stylelint-config
+pnpm add -D stylelint @stackou/stylelint-config
 ```
 
 在你的项目根目录下创建 stylelint.config.js：
