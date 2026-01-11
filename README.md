@@ -19,6 +19,11 @@ import stackou from '@stackou/stylelint-config'
 export default stackou
 ```
 
+## 配置 .npmrc 文件
+```json
+shamefully-hoist=true
+```
+
 ## NPM Scripts 脚本
 
 将以下 lint 命令添加到你的脚本 package.json 部分：
