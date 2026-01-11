@@ -63,6 +63,7 @@
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-terser": "^0.4.4",
     "@stackou/commitlint-config": "^1.0.0",
+    "@stackou/eslint-config": "^1.0.0",
     "czg": "^1.12.0",
     "eslint": "^9.29.0",
     "eslint-plugin-format": "^1.0.2",

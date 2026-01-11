@@ -66,6 +66,9 @@ importers:
       '@stackou/commitlint-config':
         specifier: ^1.0.0
         version: 1.0.0(@types/node@25.0.6)(czg@1.12.0)(lefthook@2.0.13)(typescript@5.9.3)
+      '@stackou/eslint-config':
+        specifier: ^1.0.0
+        version: 1.0.0(@antfu/eslint-config@4.19.0(@vue/compiler-sfc@3.5.26)(eslint-plugin-format@1.2.0(eslint@9.39.2(jiti@2.6.1)))(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.2(jiti@2.6.1))
       czg:
         specifier: ^1.12.0
         version: 1.12.0
@@ -617,6 +620,19 @@ packages:
     peerDependencies:
       czg: '>=1.11.0'
       lefthook: '>=2.0.13'
+
+  '@stackou/eslint-config@1.0.0':
+    resolution: {integrity: sha512-ezRg7fOalWOowEI3KO4I1VZCK2+vpTB4t5hm1Q1WMm8RvDP1H4Btf9MYgxJysmKchYBFWRVobio2rRZIYaQCoQ==}
+    peerDependencies:
+      '@antfu/eslint-config': '>=4.15.0'
+      eslint: '>=9.29.0'
+      eslint-plugin-react-native: '>=5.0.0'
+      eslint-plugin-tailwindcss: '>=3.18.2'
+    peerDependenciesMeta:
+      eslint-plugin-react-native:
+        optional: true
+      eslint-plugin-tailwindcss:
+        optional: true
 
   '@stylistic/eslint-plugin@5.7.0':
     resolution: {integrity: sha512-PsSugIf9ip1H/mWKj4bi/BlEoerxXAda9ByRFsYuwsmr6af9NxJL0AaiNXs8Le7R21QR5KMiD/KdxZZ71LjAxQ==}
@@ -3134,6 +3150,11 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
       - typescript
+
+  '@stackou/eslint-config@1.0.0(@antfu/eslint-config@4.19.0(@vue/compiler-sfc@3.5.26)(eslint-plugin-format@1.2.0(eslint@9.39.2(jiti@2.6.1)))(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.2(jiti@2.6.1))':
+    dependencies:
+      '@antfu/eslint-config': 4.19.0(@vue/compiler-sfc@3.5.26)(eslint-plugin-format@1.2.0(eslint@9.39.2(jiti@2.6.1)))(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
+      eslint: 9.39.2(jiti@2.6.1)
 
   '@stylistic/eslint-plugin@5.7.0(eslint@9.39.2(jiti@2.6.1))':
     dependencies:

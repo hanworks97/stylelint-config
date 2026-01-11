@@ -1,9 +1,5 @@
-import stackou from './dist/index.js'
+import stackou from '@stackou/eslint-config'
 
 export default stackou({
   formatters: true,
-}, {
-  rules: {
-    'antfu/no-import-dist': 'off',
-  },
 })
