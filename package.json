@@ -1,7 +1,7 @@
 {
   "name": "@hanworks/stylelint-config",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "packageManager": "pnpm@10.15.0",
   "description": "Hanworks Stylelint config",
   "author": "Hanworks <khan97z.miao@gmail.com> (https://github.com/hanworks97/)",
@@ -57,19 +57,21 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.15.0",
+    "@hanworks/eslint-config": "^1.0.1",
     "@rollup/plugin-commonjs": "^28.0.2",
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-terser": "^0.4.4",
-    "@hanworks/eslint-config": "^1.0.1",
     "eslint": "^9.29.0",
     "eslint-plugin-format": "^1.0.2",
+    "lint-staged": "^16.2.7",
     "rollup": "^4.34.1",
     "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-delete": "^3.0.1",
-    "rollup-plugin-typescript2": "^0.36.0"
+    "rollup-plugin-typescript2": "^0.36.0",
+    "simple-git-hooks": "^2.13.1"
   },
-    "simple-git-hooks": {
+  "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
