@@ -1,22 +1,22 @@
-# @stackou/stylelint-config
+# @hanworks/stylelint-config
 
 这是我个人的 Stylelint 配置预设。
 
 ## 安装
 
-在你的项目中安装 `@stackou/stylelint-config` 包：
+在你的项目中安装 `@hanworks/stylelint-config` 包：
 
 ```bash
-pnpm add -D stylelint @stackou/stylelint-config
+pnpm add -D stylelint @hanworks/stylelint-config
 ```
 
 在你的项目根目录下创建 stylelint.config.js：
 
 ```js
 // stylelint.config.js
-import stackou from '@stackou/stylelint-config'
+import hanworks from '@hanworks/stylelint-config'
 
-export default stackou
+export default hanworks
 ```
 
 ## 配置 .npmrc 文件

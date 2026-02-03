@@ -1,5 +1,5 @@
 {
-  "name": "@stackou/stylelint-config",
+  "name": "@hanworks/stylelint-config",
   "type": "module",
   "version": "1.0.0",
   "packageManager": "pnpm@10.15.0",
@@ -35,9 +35,8 @@
   "scripts": {
     "build": "rollup -c",
     "postinstall": "npm run build",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "commit": "czg"
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
   },
   "peerDependencies": {
     "autoprefixer": ">=10.4.20",
@@ -62,15 +61,18 @@
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-terser": "^0.4.4",
-    "@stackou/commitlint-config": "^1.0.0",
-    "@stackou/eslint-config": "^1.0.0",
-    "czg": "^1.12.0",
+    "@hanworks/eslint-config": "^1.0.1",
     "eslint": "^9.29.0",
     "eslint-plugin-format": "^1.0.2",
-    "lefthook": "^2.0.13",
     "rollup": "^4.34.1",
     "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-delete": "^3.0.1",
     "rollup-plugin-typescript2": "^0.36.0"
+  },
+    "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }

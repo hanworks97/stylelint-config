@@ -1,5 +1,5 @@
-import stackou from '@stackou/eslint-config'
+import hanworks from '@hanworks/eslint-config'
 
-export default stackou({
+export default hanworks({
   formatters: true,
 })
