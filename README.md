@@ -20,7 +20,8 @@ export default hanworks
 ```
 
 ## 配置 .npmrc 文件
-```json
+
+```bash
 shamefully-hoist=true
 ```
 
